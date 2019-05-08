@@ -1,0 +1,22 @@
+<div class="main">
+  <h2>
+    Cricut Code Assessment
+  </h2>
+  <p>
+    Please see instructions on devSkiller.
+  </p>
+
+  <div class="main__results">
+    <div >
+      <h4>Your Current Dictionary Output</h4>
+      <pre *ngIf="!getLayerColorWithCounts().length">Dictionary Empty</pre>
+      <pre *ngIf="getLayerColorWithCounts().length">{{ getLayerColorWithCounts() | json }}</pre>
+    </div>
+
+    <div>
+      <h4>Correct Dictionary Output</h4>
+      <pre>{{displayResultsForComparison() | json}}</pre>
+    </div>
+  </div>
+</div>
+
